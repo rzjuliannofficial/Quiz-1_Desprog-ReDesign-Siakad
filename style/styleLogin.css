@@ -7,47 +7,79 @@
     text-decoration: none;
 }
 
+/* Pastikan html dan body mengambil tinggi penuh viewport */
+body, html {
+    height: 100%;
+}
+
 body{
     color: white;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+
+    /* Pengaturan Background Image agar sesuai Desktop */
+    background-image: url(../img/image.png);
+    background-size: cover;         /* Menyesuaikan ukuran agar seluruh area body tertutup */
+    background-position: center;    /* Memposisikan gambar di tengah layar */
 }
 
 /* HEAD */
 .head{
     display: flex;
-    margin-bottom: 50px;
-    gap: 2rem;
+    margin-bottom: 40px;
+    gap: 4rem;
 }
 
 .head-left {
-    padding: 30px;
+    padding: 20px 40px;
 }
+
 .head h1{
-    font-size: 36px;
+    font-size: 33px;
+    font-weight: bold;
 }
 .head p{
-    font-size: 15px;
-    font-weight: bolder;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: -8px;
 }
 
 .head-right img{
-    width: 100px;
+    width: 90px;
+    margin-top: -5px;
 }
 
 /* Login */
 .container-login{
     width: 450px;
     height: 450px;
-    background-color: #004E98;
+    background-color: rgba(0, 78, 152, 0.5);
     /* opacity: 50%; */
     border-radius: 10px 10px 0 0;
+    color: white;
 }
 
 .container-login form {
-    padding: 30px;
+    padding: 0 40px;
 }
+
 .login input {
     font-size: 24px;
     font-weight: 500;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 2px solid white; 
+    padding: 5px 0;
+    color: white;
+    width: 100%;
+}
+
+.login input::-webkit-input-placeholder {
+    color: white;
+    opacity: 1; /* Opacity 1 memastikan warna tidak pudar */
 }
 
 .login button{
@@ -55,17 +87,33 @@ body{
     font-weight: 600;
     color: white;
     background-color: #42B72A;
-    padding: 5px 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.login button i{
+    padding-left: 5px;
+}
+
+.submit {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap: 8rem;
+}
+
+.submit p{
+    font-size: 15px;
 }
 
 .Copyright {
     color: white;
     width: 430px;
-    background-color: black;
-    padding: 10px 10px;
+    background-color: rgb(36, 35, 35);
+    padding: 15px 10px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     border-radius: 0 0 10px 10px;
 }
