@@ -3,9 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Siakad | Sistem Informasi Akademik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style/styleLogin.css">
 </head>
 <body>
-    
+    <div class="container-login">
+        <div class="head">
+            <div class="head-left">
+                <h1>SIAKAD</h1>
+                <p>Politeknik Negeri Malang</p>
+            </div>
+            <div class="head-right">
+                <img src="img/1.png" alt="Logo">
+            </div>
+        </div>
+        <form method="post" action="Beranda.html">
+            <div class="login">
+                <input type="text" name="nim" id="nim" placeholder="Nim"><br><br>
+                <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                
+                <button type="submit">
+                    Login
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+    <div class="Copyright">
+        <p>© 2025 Sistem Informasi Akademik. All Rights Reserved.</p>
+    </div>
 </body>
 </html>
