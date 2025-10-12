@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siakad | Sistem Informasi Akademik</title>
     <link rel="stylesheet" href="style/styleBeranda.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <div class="header">
@@ -19,7 +20,9 @@
                 </div>
                 <div class="role">
                     <p>Student</p>
-                    <h4>v</h4>
+                    <button>
+                        <i class="fas fa-angle-down"></i>
+                    </button>
                 </div>
             </div>
             <div class="right-side">
@@ -41,4 +44,5 @@
         </div>
     </div>
 </body>
+<script src="script/main.js"></script>
 </html>

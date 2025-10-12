@@ -55,13 +55,21 @@ body{
     font-weight: 600;
     color: rgb(93, 93, 93);
 }
+.left-side .role button{
+    font-size: 20px;
+    cursor: pointer;
+    border-style: none;
+    background-color: white;
+}
 
 
-
-.right-side {
+.right-side nav{
     display: none;
 }
 
+.right-side nav.active{
+    background-color: black;
+}
 @media screen and (max-width: 850px) {
     .header-right .left-side{
         display: none;
