@@ -31,14 +31,14 @@
             <form method="post" action="Beranda.php">
                 <div class="login">
                     <input type="text" name="nim" id="nim" placeholder="Nim" ><br><br>
-                    <input type="password" name="password" id="password" placeholder="Password" ><br><br>
+                    <input type="password" name="password" id="password" placeholder="Password"><br><br>
                     
                     <div class="submit" >
                         <button type="submit">
                             Login
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <a href="Maintance.php">
+                        <a href="#">
                             <p>Lupa Password?</p>
                         </a>
                     </div>
