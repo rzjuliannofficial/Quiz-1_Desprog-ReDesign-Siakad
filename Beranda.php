@@ -7,27 +7,38 @@
     <link rel="stylesheet" href="style/styleBeranda.css">
 </head>
 <body>
-    <div class="parent">
-        <div class="header">
+    <div class="header">
+        <div class="header-left">
             <h2>SIAKAD <span>POLINEMA</span></h2>
-            <a href="index.php">
-                <button>
-                    logout
-                </button>
-            </a>
         </div>
-        <div class="div2">2</div>
-        <div class="div3">3</div>
-        <div class="div4">4</div>
-        <div class="div5">5</div>
-        <div class="div6">6</div>
-        <div class="div7">7</div>
-        <div class="div8">8</div>
-        <div class="div9">9</div>
-        <div class="div10">10</div>
-        <div class="div11">11</div>
-        <div class="div12">12</div>
-        <div class="div13">13</div>
+        <div class="header-right">
+            <img src="img/profile.png" alt="">
+            <div class="left-side">
+                <div class="name">
+                    <p>Nabhan Rizqi Julian Saputro</p>
+                </div>
+                <div class="role">
+                    <p>Student</p>
+                    <h4>v</h4>
+                </div>
+            </div>
+            <div class="right-side">
+                <nav>
+                    <ul>
+                        <li>
+                            Settings
+                        </li>
+                        <li>
+                            <a href="index.php">
+                                <button>
+                                    logout
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </div>
 </body>
 </html>
