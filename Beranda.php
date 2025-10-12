@@ -20,22 +20,22 @@
                 </div>
                 <div class="role">
                     <p>Student</p>
-                    <button>
-                        <i class="fas fa-angle-down"></i>
-                    </button>
                 </div>
             </div>
             <div class="right-side">
+                <div class="arrow">
+                    <i class="fas fa-angle-down"></i>
+                </div>
                 <nav>
                     <ul>
                         <li>
-                            Settings
+                            <a href="Maintance.php">
+                                Settings
+                            </a>
                         </li>
                         <li>
                             <a href="index.php">
-                                <button>
-                                    logout
-                                </button>
+                                Logout
                             </a>
                         </li>
                     </ul>
