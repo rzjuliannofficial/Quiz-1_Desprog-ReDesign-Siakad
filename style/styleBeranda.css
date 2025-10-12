@@ -1,89 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    gap: 8px;
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    text-decoration: none;
 }
+
+body{
+    background-color: #E2E9F7;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    padding: 1.5rem 2rem;
+    position: sticky;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.header-left h2{
+    font-size: 26px;
+    color: #1E466E;
+}
+.header-left span{
+    color: #006ED7;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-right img{
+    width: 60px;
+}
+
+.header-right .left-side{
     
-.div1 {
-    grid-column: span 7 / span 7;
-    background-color: brown;
 }
 
-.div2 {
-    grid-row-start: 2;
-    background-color: rgb(156, 113, 113);
+.left-side .name{
+    font-weight: 700;
 }
 
-.div3 {
-    grid-column: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 2;
-    background-color: rgb(37, 37, 129);
+.left-side .role{
+    display: flex;
+    gap: 65%;
+}
+.left-side .role p{
+    font-weight: 600;
+    color: rgb(93, 93, 93);
 }
 
-.div4 {
-    grid-column: span 4 / span 4;
-    grid-column-start: 2;
-    grid-row-start: 2;
-    background-color: rgb(71, 15, 15);
+
+
+.right-side {
+    display: none;
 }
 
-.div5 {
-    grid-row: span 4 / span 4;
-    grid-row-start: 3;
-    background-color: rgb(74, 10, 10);
-}
-
-.div6 {
-    grid-row-start: 3;
-    background-color: rgb(109, 185, 68);
-}
-
-.div7 {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    background-color: rgb(15, 73, 135);
-}
-
-.div8 {
-    grid-column-start: 2;
-    grid-row-start: 5;
-    background-color: rgb(133, 15, 76);
-}
-
-.div9 {
-    grid-column-start: 2;
-    grid-row-start: 6;
-    background-color: rgb(17, 95, 2);
-}
-
-.div10 {
-    grid-column: span 3 / span 3;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 3;
-    background-color: rgb(12, 145, 112);
-}
-
-.div11 {
-    grid-column: span 2 / span 2;
-    grid-row: span 2 / span 2;
-    grid-column-start: 6;
-    grid-row-start: 3;
-}
-
-.div12 {
-    grid-column: span 4 / span 4;
-    grid-row: span 2 / span 2;
-    grid-column-start: 3;
-    grid-row-start: 5;
-}
-
-.div13 {
-    grid-row: span 2 / span 2;
-    grid-column-start: 7;
-    grid-row-start: 5;
+@media screen and (max-width: 850px) {
+    .header-right .left-side{
+        display: none;
+    }
 }
         
