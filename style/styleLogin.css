@@ -14,13 +14,13 @@ body, html {
 
 body{
     color: white;
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column;  */
+    /* justify-content: center;  */
+    /* align-items: center; */
 
     /* Pengaturan Background Image agar sesuai Desktop */
-    background-image: url(../img/image.png);
+    background-image: url(../img/polinema_vektor2.jpg);
     background-size: cover;         /* Menyesuaikan ukuran agar seluruh area body tertutup */
     background-position: center;    /* Memposisikan gambar di tengah layar */
 }
@@ -52,16 +52,16 @@ body{
 }
 
 /* Login */
-.container-login{
+.container-right{
     width: 450px;
     height: 450px;
-    background-color: rgba(0, 78, 152, 0.5);
+    background-color: rgba(0, 78, 152, 1);
     /* opacity: 50%; */
     border-radius: 10px 10px 0 0;
     color: white;
 }
 
-.container-login form {
+.container-right form {
     padding: 0 40px;
 }
 
