@@ -1,8 +1,7 @@
-// JavaScript untuk mengelola interaksi navbar burger
+// JavaScript untuk mengelola interaksi navbar 
 document.addEventListener('DOMContentLoaded', () => {
-    const arrow = document.querySelector('.role button');
+    const arrow = document.querySelector('.arrow');
     const nav = document.querySelector('.right-side nav');
-    console.log(arrow);
 
     // Toggle class 'active' untuk menampilkan/menyembunyikan navbar
     arrow.addEventListener('click', () => {
