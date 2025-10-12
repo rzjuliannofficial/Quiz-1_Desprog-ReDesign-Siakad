@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="stylesheet" href="style/styleMaintance.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-left">
+            <h1>
+                Website is under <br>
+                construction
+            </h1>
+        </div>
+        <div class="container-right">
+            <img src="img/maintance.png" alt="">
+        </div>
+    </div>
+    <a href="index.php">
+        <button>
+            Kembali Ke Halaman Awal
+        </button>
+    </a>
+</body>
+</html>
