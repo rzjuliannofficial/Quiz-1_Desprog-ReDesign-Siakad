@@ -43,6 +43,7 @@ body{
     
 }
 
+/* left-side */
 .left-side .name{
     font-weight: 700;
 }
@@ -55,21 +56,38 @@ body{
     font-weight: 600;
     color: rgb(93, 93, 93);
 }
-.left-side .role button{
+
+/* right-side */
+.right-side .arrow {
     font-size: 20px;
     cursor: pointer;
-    border-style: none;
-    background-color: white;
 }
 
+.right-side nav ul li a{
+    color: white;
+    font-weight: 550;
+    letter-spacing: 0.5px;
+}
 
 .right-side nav{
     display: none;
+    color: white;
+    flex-direction: column;
+    position: fixed;
+    top: 60px;
+    right: 10px;
+    background-color: rgb(39, 39, 39);
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .right-side nav.active{
-    background-color: black;
+    display: flex;
+    color: white;
 }
+
 @media screen and (max-width: 850px) {
     .header-right .left-side{
         display: none;
