@@ -12,10 +12,9 @@
         <div class="container-left">
             <h1>SIAKAD <span>POLINEMA</span></h1>
             <p>Selamat datang di Sistem Informasi <span>Akademik</span> <br>
-                Mahasiswa Politeknik Negeri Malang. <br>
+                Mahasiswa Politeknik Negeri Malang. <br><br>
                 Silahkan masukkan NIM dan Password Anda <br> 
-                untuk melanjutkan akses ke layanan
-                akademik
+                untuk melanjutkan akses ke layanan akademik
             </p>
         </div>
         <div class="container-right">
@@ -29,17 +28,19 @@
                 </div>
             </div>
 
-            <form method="post" action="Beranda.html">
+            <form method="post" action="Beranda.php">
                 <div class="login">
-                    <input type="text" name="nim" id="nim" placeholder="Nim"><br><br>
-                    <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                    <input type="text" name="nim" id="nim" placeholder="Nim" ><br><br>
+                    <input type="password" name="password" id="password" placeholder="Password" ><br><br>
                     
-                    <div class="submit">
+                    <div class="submit" >
                         <button type="submit">
                             Login
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <p>Lupa Password?</p>
+                        <a href="Maintance.php">
+                            <p>Lupa Password?</p>
+                        </a>
                     </div>
                 </div>
             </form>
