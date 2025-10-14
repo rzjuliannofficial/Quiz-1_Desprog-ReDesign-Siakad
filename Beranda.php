@@ -6,6 +6,7 @@
     <title>Siakad | Sistem Informasi Akademik</title>
     <link rel="stylesheet" href="style/styleBeranda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="jquery-ui-1.14.1/external/jquery/jquery.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -86,8 +87,21 @@
                     <li><a href="#">Beranda</a></li>
                     <li><a href="Maintance.php">Message</a></li>
                     <li><a href="Maintance.php">General</a></li>
-                    <li><a href="Maintance.php">Akademik</a></li>
-                    <li><a href="Maintance.php">UKT</a></li>
+                    <li class="akademik">
+                        <a href="#">Akademik <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-akademik">
+                            <li><a href="Maintance.php">Jadwal Kuliah</a></li>
+                            <li><a href="Maintance.php">Kartu Hasil Studi</a></li>
+                            <li><a href="Maintance.php">Transkrip Nilai</a></li>
+                        </ul>
+                    </li>
+                    <li class="ukt">
+                        <a href="#">UKT <i class="fas fa-chevron-down"></i></a>
+                        <ul class="sub-ukt">
+                            <li><a href="Maintance.php">Status Pembayaran</a></li>
+                            <li><a href="Maintance.php">Riwayat Tagihan</a></li>
+                        </ul>
+                    </li>
                     <li><a href="Maintance.php">Surat & Kuesioner</a></li>
                     <li><a href="Maintance.php">Tingkat Terakhir</a></li>
                 </ul>
