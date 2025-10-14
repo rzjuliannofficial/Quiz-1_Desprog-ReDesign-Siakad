@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <!-- header -->
     <div class="header">
         <div class="header-left">
             <h2>SIAKAD <span>POLINEMA</span></h2>
@@ -16,7 +17,7 @@
             <img src="img/profile.png" alt="">
             <div class="left-side">
                 <div class="name">
-                    <p>Nabhan Rizqi Julian Saputro</p>
+                    <p>Nabhan Rizqi Julian S.</p>
                 </div>
                 <div class="role">
                     <p>Student</p>
@@ -43,6 +44,11 @@
             </div>
         </div>
     </div>
+
+    <!-- CONTAINER-->
+    <div class="container">
+
+    </div>  
 </body>
 <script src="script/main.js"></script>
 </html>
