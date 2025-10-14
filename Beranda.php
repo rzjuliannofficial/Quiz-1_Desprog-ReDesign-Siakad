@@ -47,7 +47,39 @@
 
     <!-- CONTAINER-->
     <div class="container">
+        
+        <div class="sidebar">
 
+            <!-- card-student -->
+            <div class="card-student">
+                <div class="info-utama">
+                    <img src="img/profile.png" alt="">
+                    <div class="profile">
+                        <div class="name">
+                            <p>Nabhan Rizqi J.S.</p>
+                        </div>
+                        <div class="nim">
+                            <p>2341720255</p>
+                            <i class="fas fa-copy"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-tambahan">
+                    <div class="jurusan">
+                        Jurusan
+                        <p>TI</p>
+                    </div>
+                    <div class="semester">
+                        Semester
+                        <p>2025/2026 <br>Ganjil</p>
+                    </div>
+                    <div class="angkatan">
+                        Angkatan
+                        <p>2024</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
     </div>  
 </body>
 <script src="script/main.js"></script>
