@@ -134,8 +134,21 @@
                       </div>
                     </div>
                 
-                    
+                    <!-- Presensi -->
+                    <div class="card progress">
+                      <h3>Week Progress</h3>
+                      <p>On this semester</p>
+                      <img src="img/progress.png" alt="progress">
+                    </div>
+    
+                    <!-- Tagihan -->
+                    <div class="card billing">
+                        <h3>Tagihan</h3>
+                        <p class="nominal">Rp 5.000.000</p>
+                        <p>Status: <span>Lunas</span></p>
+                    </div>
                 </div>
+
             </div>
 
         </div>
