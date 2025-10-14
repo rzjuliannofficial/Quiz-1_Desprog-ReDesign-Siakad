@@ -148,9 +148,41 @@
                         <p>Status: <span>Lunas</span></p>
                     </div>
                 </div>
-
+                <!-- sub-body -->
+                <div class="sub-body">
+                    <div class="dasboard-2">
+                        <div class="card ipsGrafik">
+                            <h3>Grafik IPS</h3>
+                            <img src="img/ipsGrafik.png" alt="">
+                        </div>
+                        <div class="card masa-studi">
+                            <h3>Masa Studi</h3>
+                            <div class="konten">
+                                <img src="img/masaStudi.png" alt="">
+                                <p class="keterangan">2 Semester telah ditempuh</p>
+                                <div class="warna">
+                                    <div class="masa-studi">
+                                        <p>Masa studi</p>
+                                    </div>
+                                    <div class="studi-ditempuh">
+                                        <p>Studi yang ditempuh</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dasboard-3">
+                        <div class="card presensi">
+                            <h3>Presensi Mahasiswa</h3>
+                            <img src="img/presensi.png" alt="">
+                        </div>
+                        <div class="card pengumuman">
+                            <h3>pengumuman</h3>
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
     </div>  
 </body>
