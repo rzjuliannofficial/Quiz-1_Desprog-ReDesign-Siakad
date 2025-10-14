@@ -161,10 +161,12 @@
                                 <img src="img/masaStudi.png" alt="">
                                 <p class="keterangan">2 Semester telah ditempuh</p>
                                 <div class="warna">
-                                    <div class="masa-studi">
+                                    <div class="value-warna">
+                                        <div class="balok pertama"></div>
                                         <p>Masa studi</p>
                                     </div>
-                                    <div class="studi-ditempuh">
+                                    <div class="value-warna">
+                                        <div class="balok kedua"></div>
                                         <p>Studi yang ditempuh</p>
                                     </div>
                                 </div>
@@ -177,8 +179,25 @@
                             <img src="img/presensi.png" alt="">
                         </div>
                         <div class="card pengumuman">
-                            <h3>pengumuman</h3>
-                            <img src="" alt="">
+                            <h3>Pengumuman</h3>
+                            <div class="news">
+                                <div class="news-head">
+                                    <p>news</p>
+                                    <p class="tanggal">Oct 14, 2025 </p>
+                                </div>
+                                <div class="conten">
+                                    <p>Selamat datang di Sistem Akademik POLINEMA</p>
+                                </div>
+                            </div>
+                            <div class="news">
+                                <div class="news-head">
+                                    <p>news</p>
+                                    <p class="tanggal">Oct 14, 2025 </p>
+                                </div>
+                                <div class="conten">
+                                    <p>Selamat datang di Sistem Akademik POLINEMA</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
