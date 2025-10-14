@@ -5,10 +5,13 @@
     padding: 0;
     font-family: 'Poppins';
     text-decoration: none;
+    list-style: none;
+    letter-spacing: 0.5px;
 }
 
 body{
     background-color: #E2E9F7;
+    font-size: 16px;
 }
 
 .header{
@@ -23,7 +26,7 @@ body{
 }
 
 .header-left h2{
-    font-size: 26px;
+    font-size: 35px;
     color: #1E466E;
 }
 .header-left span{
@@ -39,37 +42,29 @@ body{
     width: 60px;
 }
 
-.header-right .left-side{
-    
-}
-
-/* left-side */
-.left-side .name{
+/*header-right left-side */
+.header-right .left-side .name{
     font-weight: 700;
 }
 
-.left-side .role{
-    display: flex;
-    gap: 65%;
-}
-.left-side .role p{
+.header-right .left-side .role{
     font-weight: 600;
     color: rgb(93, 93, 93);
 }
 
 /* right-side */
-.right-side .arrow {
+.header-right .right-side .arrow {
     font-size: 20px;
     cursor: pointer;
 }
 
-.right-side nav ul li a{
+.header-right .right-side nav ul li a{
     color: white;
     font-weight: 550;
     letter-spacing: 0.5px;
 }
 
-.right-side nav{
+.header-right .right-side nav{
     display: none;
     color: white;
     flex-direction: column;
@@ -88,6 +83,245 @@ body{
     color: white;
 }
 
+/* CONTAINER */
+.container{
+    display: flex;
+}
+
+/* SIDEBAR*/
+/* card-student-info */
+.card-student{
+    background-image: linear-gradient(#004E98 , #132D63);
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+}
+
+.card-student .info-utama{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    font-size: 20px;
+}
+
+.card-student img{
+    width: 60px;
+}
+
+.card-student .profile{
+    align-items: center;
+    gap: 1rem;
+}
+.profile .name{
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+.profile .nim{
+    display: flex;
+    letter-spacing: 1px;
+    color: rgb(184, 184, 184);
+    gap: 10px;
+    align-items: center;
+}
+
+.card-student .info-tambahan{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    color: rgb(184, 184, 184);
+}
+
+.jurusan p, 
+.semester p,
+.angkatan p{
+    color: white;
+    font-weight: 550;
+}
+
+/* navbar */
+.navbar {
+    background: linear-gradient(180deg, #1e3c72, #2a5298);
+    border-radius: 10px;
+    color: #fff;
+    margin: 2rem;
+    padding: 0.5rem 2rem;
+    padding-bottom: 50%;
+}
+
+.navbar li {
+    margin: 20px 0;
+}
+
+.navbar a {
+    display: block;
+    color: #fff;
+    font-size: 23px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.navbar a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.main {
+    padding-top: 2rem;
+    width: 100%;
+}
+
+/* dasboard */
+.main .head {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* background-color: rgb(146, 55, 55); */
+    border-radius: 0 0 20px 20px;
+    color: white;
+    gap: 1.5rem;
+}
+
+.main .head-1{
+    background: linear-gradient(to right,#0d3084 , #004E98 ,#2057cc);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+}
+
+.main .head-2{
+    display: flex;
+    background: linear-gradient(to right,#0BA5F2 , #004E98);
+    border-radius: 15px;
+    padding: 1rem;
+    margin-right: 2rem ;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+
+.main .head-2 .tanggal{
+    /* padding-right: 1rem; */
+}
+.main .head-2 .tanggal h1{
+    font-size: 40px;
+}
+.main .head-2 .pekan-kuliah {
+    font-size: 25px;
+    line-height: 1.2;
+}
+
+
+/* main class BODY */
+.main .body{
+    display: flex;
+    gap: 1.5rem;
+}
+.dasboard-1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dasboard-2{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.dasboard-3{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Main bagian Class Body */
+/* Card class Value */
+.card .value{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+.card .value .nilai{
+    font-size: 40px;
+    font-weight: 600;
+    color: #006ED7;
+}
+.value .keterangan{
+    color: rgb(0, 0, 0, 0.6);
+}
+
+.progress p{
+    color: rgb(0, 0, 0, 0.6);
+}
+.progress img{
+    padding: 10px 0 0 0;
+    width: 250px;
+}
+
+.billing .nominal{
+    font-size: 28px;
+    font-weight: 650;
+    color: #142A5D;
+}
+
+.billing span{
+    font-weight: 600;
+    color: #3ed420;
+}
+
+/* Main bagian Sub-body */
+/* Dasboard-2 */
+.sub-body{
+    padding: 0;
+    margin: 0;
+}
+.dasboard-2 .ipsGrafik{
+    font-size: 20px;
+}
+.dasboard-2 .ipsGrafik img{
+    width: 650px;
+    padding: 0 1.5rem;
+}
+
+.dasboard-2 .masa-studi .konten{
+    text-align: center;
+}
+.dasboard-2 .masa-studi img{
+    width: 120px;
+    padding: 2rem 0px;
+}
+.dasboard-2 .masa-studi .keterangan{
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.589);
+}
+.dasboard-2 .masa-studi .warna{
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+    font-size: 15px;
+    font-weight: 700;
+    color:rgba(0, 0, 0, 0.371);
+}
+
+/* Dasboard-3 */
+.dasboard-3 .presensi img{
+    width: 750px;
+    padding: 1rem 1rem;
+}
 @media screen and (max-width: 850px) {
     .header-right .left-side{
         display: none;
