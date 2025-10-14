@@ -45,5 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+$(document).ready(function(){
+    $(".akademik").click(function(){
+        $(".sub-akademik").slideToggle("slow"); // SlideToggle
+    });
+});
+
+$(document).ready(function(){
+    $(".ukt").click(function(){
+        $(".sub-ukt").slideToggle("slow"); // SlideToggle
+    });
+});
+
+
 
 
