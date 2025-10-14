@@ -79,6 +79,19 @@
                     </div>
                 </div>  
             </div>
+                    
+            <!-- SIDEBAR/NAVBAR -->
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="Maintance.php">Message</a></li>
+                    <li><a href="Maintance.php">General</a></li>
+                    <li><a href="Maintance.php">Akademik</a></li>
+                    <li><a href="Maintance.php">UKT</a></li>
+                    <li><a href="Maintance.php">Surat & Kuesioner</a></li>
+                    <li><a href="Maintance.php">Tingkat Terakhir</a></li>
+                </ul>
+            </div>
         </div>
     </div>  
 </body>
