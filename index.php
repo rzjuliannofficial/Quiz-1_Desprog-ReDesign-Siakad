@@ -6,6 +6,7 @@
     <title>Siakad | Sistem Informasi Akademik</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style/styleLogin.css">
+    <script src="jquery-ui-1.14.1/external/jquery/jquery.js"></script>
 </head>
 <body>
     <div class="container-main">
@@ -28,10 +29,10 @@
                 </div>
             </div>
 
-            <form method="post" action="Beranda.php">
+            <form id="loginForm" method="post" action="#">
                 <div class="login">
-                    <input type="text" name="nim" id="nim" placeholder="Nim" ><br><br>
-                    <input type="password" name="password" id="password" placeholder="Password"><br><br>
+                    <input type="text" name="nim" id="nim" placeholder="Nim" required><br><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required><br><br>
                     
                     <div class="submit" >
                         <button type="submit">
@@ -50,4 +51,5 @@
         </div>
     </div>
 </body>
+<script src="script/main.js"></script>
 </html>
