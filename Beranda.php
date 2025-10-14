@@ -124,9 +124,18 @@
                           <p class="keterangan">Bagus! Ada <br>Peningkatan</p>
                       </div>
                     </div>
-                </div>
+                
+                    <!-- SKS -->
+                    <div class="card sks">
+                      <h3>SKS Semester 3</h3>
+                      <div class="value">
+                          <p class="nilai">20</p>
+                          <p class="keterangan">Kamu butuh <br>5 Semester lagi <br>untuk lulus</p>
+                      </div>
+                    </div>
                 
                     
+                </div>
             </div>
 
         </div>
