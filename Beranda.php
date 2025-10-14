@@ -114,7 +114,20 @@
                     </div>
                 </div>
             </div>
-            
+            <!-- Bagian body main -->
+            <div class="body">
+                <div class="dasboard-1">
+                    <div class="card ipk">
+                      <h3>Indeks Prestasi Kumulatif</h3>
+                      <div class="value">
+                          <p class="nilai">3.9</p>
+                          <p class="keterangan">Bagus! Ada <br>Peningkatan</p>
+                      </div>
+                    </div>
+                </div>
+                
+                    
+            </div>
 
         </div>
     </div>  
