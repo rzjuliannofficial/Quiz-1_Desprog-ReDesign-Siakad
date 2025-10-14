@@ -146,7 +146,7 @@ body{
     color: #fff;
     margin: 2rem;
     padding: 0.5rem 2rem;
-    padding-bottom: 60%;
+    padding-bottom: 70%;
 }
 
 .navbar li {
@@ -166,6 +166,25 @@ body{
 .navbar a:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
+/* sub-navbar */
+.sidebar .navbar ul li a{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar .navbar ul li ul {
+    display: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+}
+.sidebar .navbar ul li ul li a {
+    font-size: 14px;
+    padding: 5px 12px;
+    font-weight: 400;
+}
+/* end sub-navbar */
 
 .main {
     padding: 2rem 0;
@@ -286,11 +305,14 @@ body{
     padding: 0;
     margin: 0;
 }
+.dasboard-2{
+    justify-content: space-between;
+}
 .dasboard-2 .ipsGrafik{
     font-size: 20px;
 }
 .dasboard-2 .ipsGrafik img{
-    width: 630px;
+    width: 640px;
     padding: 0 1.5rem;
 }
 
