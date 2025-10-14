@@ -146,7 +146,7 @@ body{
     color: #fff;
     margin: 2rem;
     padding: 0.5rem 2rem;
-    padding-bottom: 50%;
+    padding-bottom: 60%;
 }
 
 .navbar li {
@@ -156,7 +156,7 @@ body{
 .navbar a {
     display: block;
     color: #fff;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 500;
     padding: 8px 12px;
     border-radius: 6px;
@@ -168,7 +168,7 @@ body{
 }
 
 .main {
-    padding-top: 2rem;
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -202,15 +202,12 @@ body{
     gap: 1rem;
 }
 
-
-.main .head-2 .tanggal{
-    /* padding-right: 1rem; */
-}
 .main .head-2 .tanggal h1{
     font-size: 40px;
 }
 .main .head-2 .pekan-kuliah {
     font-size: 25px;
+    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -222,7 +219,7 @@ body{
 }
 .dasboard-1{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     margin-top: 2rem;
 }
@@ -293,35 +290,86 @@ body{
     font-size: 20px;
 }
 .dasboard-2 .ipsGrafik img{
-    width: 650px;
+    width: 630px;
     padding: 0 1.5rem;
 }
 
+.dasboard-2 .masa-studi{
+    margin-right: 2rem;
+}
 .dasboard-2 .masa-studi .konten{
     text-align: center;
 }
 .dasboard-2 .masa-studi img{
-    width: 120px;
+    width: 150px;
     padding: 2rem 0px;
 }
 .dasboard-2 .masa-studi .keterangan{
     font-weight: 700;
     color: rgba(0, 0, 0, 0.589);
 }
+
 .dasboard-2 .masa-studi .warna{
     display: flex;
-    gap: 1rem;
+    align-items: center;
     padding-top: 1rem;
     font-size: 15px;
     font-weight: 700;
     color:rgba(0, 0, 0, 0.371);
+    /* background-color: #eb5a01; */
+    gap: 20px;
+}
+.dasboard-2 .masa-studi .warna .value-warna{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+}
+
+.dasboard-2 .masa-studi .warna .balok{
+    width: 20px;
+    height: 20px;
+    background-color: #C7E4FF;
+}
+
+.dasboard-2 .masa-studi .warna .kedua{
+    background-color: #004E98;
 }
 
 /* Dasboard-3 */
 .dasboard-3 .presensi img{
-    width: 750px;
-    padding: 1rem 1rem;
+    width: 650px;
+    /* padding: 1.5rem; */
+    padding-top: 3rem;
 }
+
+.dasboard-3 .pengumuman{
+    /* padding: 20px; */
+    margin-right: 2rem;
+}
+.dasboard-3 .pengumuman .news{
+    background-color: #C8DBF9;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.dasboard-3 .pengumuman .news .news-head{
+    display: flex;
+    justify-content: space-between;
+}
+.dasboard-3 .pengumuman .news .news-head .tanggal{
+    color: white;
+    font-weight: 600;
+    background-color: #0c2051;
+    padding: 4px;
+    border-radius: 5px;
+}
+.news .conten{
+    margin-top: 1rem;
+    font-size: 18px;
+    font-weight: 700;
+}
+
 @media screen and (max-width: 850px) {
     .header-right .left-side{
         display: none;
