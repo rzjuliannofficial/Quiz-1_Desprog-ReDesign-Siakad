@@ -93,6 +93,30 @@
                 </ul>
             </div>
         </div>
+        
+        <!-- Main -->
+        <div class="main">
+            <!-- bagian kepala main -->
+            <div class="head">
+                <div class="head-1">
+                    <div class="welcome">
+                        <h1>Hi, Nabhan Rizqi Julian Saputro</h1>
+                        <p>Selesaikan apa yang kamu mulai!</p>
+                    </div>
+                </div>
+                <div class="head-2">
+                    <div class="tanggal">
+                        <h1>Rabu</h1>
+                        <p>15 Oktober 2025</p>
+                    </div>
+                    <div class="pekan-kuliah">
+                        <p>Pekan Perkuliahan <br>Ke -8</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
     </div>  
 </body>
 <script src="script/main.js"></script>
