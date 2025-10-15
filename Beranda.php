@@ -31,7 +31,7 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="Maintance.php">
+                            <a href="404.php">
                                 Settings
                             </a>
                         </li>
@@ -85,25 +85,25 @@
             <div class="navbar">
                 <ul>
                     <li><a href="#">Beranda</a></li>
-                    <li><a href="Maintance.php">Message</a></li>
-                    <li><a href="Maintance.php">General</a></li>
+                    <li><a href="404.php">Message</a></li>
+                    <li><a href="404.php">General</a></li>
                     <li class="akademik">
                         <a href="#">Akademik <i class="fas fa-chevron-down"></i></a>
                         <ul class="sub-akademik">
-                            <li><a href="Maintance.php">Jadwal Kuliah</a></li>
-                            <li><a href="Maintance.php">Kartu Hasil Studi</a></li>
-                            <li><a href="Maintance.php">Transkrip Nilai</a></li>
+                            <li><a href="404.php">Jadwal Kuliah</a></li>
+                            <li><a href="404.php">Kartu Hasil Studi</a></li>
+                            <li><a href="404.php">Transkrip Nilai</a></li>
                         </ul>
                     </li>
                     <li class="ukt">
                         <a href="#">UKT <i class="fas fa-chevron-down"></i></a>
                         <ul class="sub-ukt">
-                            <li><a href="Maintance.php">Status Pembayaran</a></li>
-                            <li><a href="Maintance.php">Riwayat Tagihan</a></li>
+                            <li><a href="404.php">Status Pembayaran</a></li>
+                            <li><a href="404.php">Riwayat Tagihan</a></li>
                         </ul>
                     </li>
-                    <li><a href="Maintance.php">Surat & Kuesioner</a></li>
-                    <li><a href="Maintance.php">Tingkat Terakhir</a></li>
+                    <li><a href="404.php">Surat & Kuesioner</a></li>
+                    <li><a href="404.php">Tingkat Terakhir</a></li>
                 </ul>
             </div>
         </div>
