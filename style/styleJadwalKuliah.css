@@ -22,7 +22,7 @@
 }
 
 /* Gaya untuk Container Tabel */
-.schedule-table-container {
+.Tabel-Jadwal {
     padding: 1.6rem; 
     background: #fff;
     border-radius: 16px;
@@ -31,34 +31,34 @@
     margin-bottom: 1.6rem;
 }
 
-.schedule-table-container h1 {
+.Tabel-Jadwal h1 {
     font-size: 28px;
     margin-bottom: 0.8rem;
     color: #1E466E;
 }
-.schedule-table-container h3 {
+.Tabel-Jadwal h3 {
     font-size: 14.4px; 
     margin-bottom: 0.4rem;
     color: #555;
 }
 
 /* Gaya Tabel */
-.schedule-table-container table {
+.Tabel-Jadwal table {
     border-collapse: collapse;
     margin-top: 1.6rem;
 }
-.schedule-table-container th, 
-.schedule-table-container td {
+.Tabel-Jadwal th, 
+.Tabel-Jadwal td {
     padding: 9.6px; 
     text-align: left;
     border: 1px solid #ddd;
     font-size: 12px;
 }
-.schedule-table-container th {
-    background-color: #e3e3e3;
+.Tabel-Jadwal th {
+    background-color: #1E466E;
     font-weight: 600;
-    color: #1E466E;
+    color: white;
 }
-.schedule-table-container tr:nth-child(even) {
+.Tabel-Jadwal tr:nth-child(even) {
     background-color: #e3e3e3;
 }

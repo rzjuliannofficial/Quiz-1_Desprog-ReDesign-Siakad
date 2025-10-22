@@ -36,7 +36,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="index.php404.php">
+                            <a href="index.php">
                                 Logout
                             </a>
                         </li>

@@ -125,7 +125,7 @@ $user_role = "Student";
         </div>
         
         <div class="main">
-            <div class="schedule-table-container">
+            <div class="Tabel-Jadwal">
                 <h1>Jadwal Perkuliahan</h1>
                 <h3>Tahun Akademik : 2025/2026 Ganjil</h3>
                 <h3>Kelas : 2F</h3>

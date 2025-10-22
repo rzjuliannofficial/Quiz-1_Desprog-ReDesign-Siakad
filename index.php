@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <form id="loginForm" method="post" action="#">
+            <form id="loginForm" method="post">
                 <div class="login">
                     <input type="text" name="nim" id="nim" placeholder="Nim" required><br><br>
                     <input type="password" name="password" id="password" placeholder="Password" required><br><br>
