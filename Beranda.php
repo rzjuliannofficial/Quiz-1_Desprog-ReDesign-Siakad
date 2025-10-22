@@ -31,12 +31,12 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="404.html">
+                            <a href="404.php">
                                 Settings
                             </a>
                         </li>
                         <li>
-                            <a href="index.html">
+                            <a href="index.php404.php">
                                 Logout
                             </a>
                         </li>
@@ -85,25 +85,25 @@
             <div class="navbar">
                 <ul>
                     <li><a href="#">Beranda</a></li>
-                    <li><a href="404.html">Message</a></li>
-                    <li><a href="404.html">General</a></li>
+                    <li><a href="404.php">Message</a></li>
+                    <li><a href="404.php">General</a></li>
                     <li class="akademik">
                         <a href="#">Akademik <i class="fas fa-chevron-down"></i></a>
                         <ul class="sub-akademik">
-                            <li><a href="404.html">Jadwal Kuliah</a></li>
-                            <li><a href="404.html">Kartu Hasil Studi</a></li>
-                            <li><a href="404.html">Transkrip Nilai</a></li>
+                            <li><a href="JadwalKuliah.php">Jadwal Kuliah</a></li>
+                            <li><a href="404.php">Kartu Hasil Studi</a></li>
+                            <li><a href="404.php">Transkrip Nilai</a></li>
                         </ul>
                     </li>
                     <li class="ukt">
                         <a href="#">UKT <i class="fas fa-chevron-down"></i></a>
                         <ul class="sub-ukt">
-                            <li><a href="404.html">Status Pembayaran</a></li>
-                            <li><a href="404.html">Riwayat Tagihan</a></li>
+                            <li><a href="404.php">Status Pembayaran</a></li>
+                            <li><a href="404.php">Riwayat Tagihan</a></li>
                         </ul>
                     </li>
-                    <li><a href="404.html">Surat & Kuesioner</a></li>
-                    <li><a href="404.html">Tingkat Terakhir</a></li>
+                    <li><a href="404.php">Surat & Kuesioner</a></li>
+                    <li><a href="404.php">Tingkat Terakhir</a></li>
                 </ul>
             </div>
         </div>

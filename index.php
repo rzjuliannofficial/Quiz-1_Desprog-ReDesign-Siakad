@@ -39,7 +39,7 @@
                             Login
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <a href="Maintance.html">
+                        <a href="Maintance.php">
                             <p>Lupa Password?</p>
                         </a>
                     </div>

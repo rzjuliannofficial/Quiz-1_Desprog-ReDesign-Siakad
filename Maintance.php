@@ -18,7 +18,7 @@
             <img src="img/maintance.png" alt="">
         </div>
     </div>
-    <a href="index.html">
+    <a href="index.php">
         <button>
             Kembali Ke Halaman Awal
         </button>
