@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Logika Validasi login
             if (nim === VALID_NIM && password === VALID_PASSWORD) {
                 
-                window.location.href = 'Beranda.html';
+                window.location.href = 'Beranda.php';
             } else {
                 // Jika validasi GAGAL, tampilkan alert error
                 const errorMessage = 'NIM atau Password salah. Silahkan coba lagi.';
