@@ -1,20 +1,17 @@
 <?php
+// --- Menggunakan koneksi.php yang baru ---
+require './koneksi.php'; // WAJIB GANTI
 
-// --- KONFIGURASI KONEKSI POSTGRESQL ---
-$host   = 'localhost';
-$port   = '5432';
-$dbname = 'PhpDatabase';
-$user   = 'postgres';
-$pass   = '123';
-
-// Membuat koneksi
-$conn = pg_connect("host=$host port=$port dbname=$dbname user=$user password=$pass");
-
-if (!$conn) {
-    die('Koneksi gagal: ' . pg_last_error());
-}
-
-pg_set_client_encoding($conn, 'UTF8');
+// Data untuk header tabel (ditambahkan kolom AKSI)
+$header_data = [
+    "No" => "NO",
+    "Hari" => "HARI",
+    "Jam" => "JAM",
+    "KodeMK" => "KODE MK",
+    "MataKuliah" => "MATA KULIAH",
+    "Dosen" => "DOSEN",
+    "Aksi" => "AKSI" // Tambahkan kolom Aksi
+];
 
 // --- QUERY JADWAL PERKULIAHAN ---
 $sql = "SELECT 
@@ -34,26 +31,15 @@ ORDER BY CASE \"Hari\"
     ELSE 6
 END, \"Jam\""; 
 
-$result = pg_query($conn, $sql);
-
-if (!$result) {
-    die('Query gagal: ' . pg_last_error($conn));
+try {
+    $result = q($sql); // Menggunakan fungsi q()
+    $user_name = "Nabhan Rizqi Julian S.";
+    $user_role = "Student";
+} catch (Throwable $e) {
+    die('Error saat mengambil data jadwal: ' . htmlspecialchars($e->getMessage()));
 }
-
-// Data untuk header tabel
-$header_data = [
-    "No" => "NO",
-    "Hari" => "HARI",
-    "Jam" => "JAM",
-    "KodeMK" => "KODE MK",
-    "MataKuliah" => "MATA KULIAH",
-    "Dosen" => "DOSEN"
-];
-
-// Asumsi data nama dan role dari sesi atau autentikasi untuk header
-$user_name = "Nabhan Rizqi Julian S.";
-$user_role = "Student";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +50,7 @@ $user_role = "Student";
     <link rel="stylesheet" href="style/styleJadwalKuliah.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="jquery-ui-1.14.1/external/jquery/jquery.js"></script>
+    
     
 </head>
 <body>
@@ -130,6 +117,14 @@ $user_role = "Student";
                 <h3>Tahun Akademik : 2025/2026 Ganjil</h3>
                 <h3>Kelas : 2F</h3>
                 
+                <p style="margin-bottom: 1rem;"><a class="btn" href="jadwal_create.php" style="
+                    padding: 8px 12px;
+                    border-radius: 6px;
+                    background: #007bff;
+                    color: white;
+                    text-decoration: none;
+                    display: inline-block;">+ Tambah Jadwal</a></p>
+
                 <table>
                     <thead>
                         <tr>
@@ -139,8 +134,10 @@ $user_role = "Student";
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $i = 1; ?>
-                        <?php while ($row = pg_fetch_assoc($result)): ?>
+                        <?php 
+                        $i = 1; 
+                        while ($row = pg_fetch_assoc($result)): 
+                        ?>
                         <tr>
                             <td><?php echo htmlspecialchars($i++); ?></td>
                             <td><?php echo htmlspecialchars($row["Hari"]); ?></td>
@@ -148,20 +145,25 @@ $user_role = "Student";
                             <td><?php echo htmlspecialchars($row["KodeMK"]); ?></td>
                             <td><?php echo htmlspecialchars($row["MataKuliah"]); ?></td>
                             <td><?php echo htmlspecialchars($row["Dosen"]); ?></td>
+                            
+                            <td class="row-actions" style="display: flex; gap: 0.5rem; justify-content: center; align-items: center;">
+                                <a class="btn" href="jadwal_edit.php?id=<?= urlencode($row["No"]) ?>" style="background: #ffc107; color: black; padding: 4px 8px; border: none; border-radius: 4px; text-decoration: none;">Ubah</a>
+                                
+                                <a href="#" class="btn" onclick="if(confirm('Hapus data ini?')) { 
+                                    document.getElementById('deleteForm<?= $row['No'] ?>').submit(); 
+                                }" style="background: #dc3545; color: white; padding: 4px 8px; border: none; border-radius: 4px; text-decoration: none;">Hapus</a>
+
+                                <form id="deleteForm<?= $row['No'] ?>" action="jadwal_delete.php" method="post" style="display:none;">
+                                    <input type="hidden" name="id" value="<?= htmlspecialchars($row['No']) ?>">
+                                </form>
+                            </td>
                         </tr>
                         <?php endwhile; ?>
                     </tbody>
                 </table>
             </div>
         </div>
-    </div>  
-
-    <?php
-    // Bebaskan hasil query dari memori
-    pg_free_result($result);
-    // Tutup koneksi ke database
-    pg_close($conn);
-    ?>
+    
 
 </body>
 <script src="script/main.js"></script>
